@@ -47,10 +47,11 @@ function StartUp() {
 
 function AssignColor() {
     var colors = ['red', 'blue', 'green', 'white', 'black', 'pink', 'red', 'blue', 'green', 'white', 'black', 'pink']
+    //alert(colors.getRandom())
     for (var i = 1; i >= 12; i++) {
         var buttonSelected = document.getElementById("btn"+i)
         buttonSelected.addEventListener('click', function() {
-        buttonSelected.style.backgroundColor = colors.getRandom();
+            buttonSelected.style.backgroundColor = colors.getRandom();
         }, false)
     }
 }
